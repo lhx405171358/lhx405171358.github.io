@@ -7,27 +7,22 @@ html,body{
 	font-family:"Microsoft Yahei";
 	background: #dedede;
 }
+/*导航栏*/
 header{
 	min-width: 500px;
-	height: 100px;
+	height: 70px;
+	line-height: 70px;
 	background: #00838F;
 }
 header img{
-	width: 90px;
-	height: 90px;
-	margin: 5px;
-}
-#topBar{
-	width: 100%;
-	height: 100px;
+	width: 64px;
+	height: 64px;
+	margin: 3px;
 }
 #nav{
 	float: right;
-	height: 100px;
-	line-height: 100px;
-	margin: 0 10px 0 0;
+	margin-right: 20px;
 }
-
 #nav li{
 	display: inline-block;
 	margin-left:10px
@@ -39,12 +34,112 @@ header img{
 #nav li a:hover{
 	color:black;
 }
-
-.article1, .article2, .article3, .pictureDiv{
+/*网页内容*/
+.article1, .article2, .article3, .picture, .sideBar{
 	background: #F5F5F5;
 	margin: 10px 20px;
 	padding: 20px 20px;
-	border-right-style: ridge;
-	border-bottom-style: ridge; 
-
+	border-style: solid ridge ridge solid; 
+	border-width: 1px 5px 5px 1px; 
+	border-top-color: #cbcbcb;
+	border-left-color: #cbcbcb;
+}
+.subtitle{
+	color: #424242;
+}
+.articleInfo{
+	font-size: 80%;
+	color: #757575;
+}
+.articleBody{
+	text-indent: 2em;
+}
+.picture li{
+	border:1px solid gray;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
+}
+.picture  img{
+	width: 80%;
+	height: 80%;
+}
+.picture p{
+	line-height: 50%;
+}
+.article3 table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.article3  th ,td {
+	text-align: left;
+	border: 1px solid #ccc
+}
+.article3  th{
+	background: black;
+	color: white;
+}
+/*表格*/
+.tableCol{
+	width: 40%;
+}
+.lastCol{
+	width: 20%;
+}
+#lastRow{
+	background: #ccc;
+	font-weight: bold;
+}
+#lastRow1{
+	width: 40%;
+}
+#lastRow2{
+	width: 60%;
+}
+/*侧边栏*/
+.sideBar{
+	margin: 30px 30px 10px 20px;
+	padding: 20px 20px;
+}
+.inputDiv{
+	margin: 8px 0;
+}
+.sideBar h2{
+	font-size: 130%;
+	border-left: 3px solid #ccc;
+	padding: 10px;
+}
+.hintInfo{
+	color: gray;
+	padding-left: 40%;
+	margin: 5px 0 10px;
+}
+.inputHint{
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+	vertical-align: top;
+}
+#submitBtn{
+	display: block;
+	background: #0277BD;
+	width: 100%;
+	color: white;
+	border-radius: 5px;
+	border: 0;
+	line-height:3em;
+	font-weight: bold;
+}
+/*页脚*/
+footer{
+	min-width: 500px;
+	height: 50px;
+	line-height: 50px;
+	background: #263238;
+	text-align: center;
+}
+footer{
+	color: white;
 }
