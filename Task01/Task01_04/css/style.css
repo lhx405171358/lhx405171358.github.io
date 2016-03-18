@@ -1,0 +1,41 @@
+/*清除默认样式*/
+*{
+	margin:0;
+	padding:0;
+	height: 100%;
+	width: 100%;
+	font-family:"Microsoft Yahei";
+	box-sizing:border-box;
+}
+.main{
+	background: #ccc;
+	height: 100%;
+	max-height:200px;
+	max-width: 400px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform:translateY(-50%);/* IE 9 */
+	-webkit-transform:translateY(-50%);/* Safari and Chrome */
+}
+
+.topLeft{
+	background: #fc0;
+	height: 50px;
+	width: 50px;
+	border-bottom-right-radius:50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.bottomRight{
+	background: #fc0;
+	height: 50px;
+	width: 50px;
+	border-top-left-radius:50px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
