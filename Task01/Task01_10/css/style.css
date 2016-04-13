@@ -1,0 +1,42 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:"Microsoft Yahei";
+	box-sizing: border-box; 
+}
+body{
+	padding: 20px;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	align-items:center;
+	
+	border:1px solid gray;
+}
+.flex-item{
+	border:1px solid red;
+	width: 150px;
+	margin-bottom: 10px;
+}
+#item1{
+	height: 120px;
+}
+#item2{
+	height: 100px;
+}
+#item3{
+	height: 40px;
+}
+#item4{
+	height: 200px;
+	border:1px solid blue;
+}
+
+@media only screen and (max-width: 640px) {
+	body{
+		align-items:flex-start;
+	}
+	#item4{
+		order:-1;
+	}
+}
