@@ -51,19 +51,13 @@ button:hover, button:focus
 {
   background-color: #104259;
   outline: none;
+  outline: none;
 }
 .hr
 {
   width: 80%;
   height: 2px;
   margin: 20px auto;
-}
-.main-wrapper
-{
-  background:url(../img/banner.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .wrapper
 {
@@ -134,6 +128,15 @@ header{
   -o-transition: color .7s;
   transition: color .7s;
 }
+#top-menu .active:nth-child(3) a
+{
+  color: #b44c2b;
+  -webkit-transition: color .7s;
+  -moz-transition: color .7s;
+  -ms-transition: color .7s;
+  -o-transition: color .7s;
+  transition: color .7s;
+}
 #top-menu .active:nth-child(4) a
 {
   color: #009688;
@@ -185,7 +188,7 @@ header{
 
 .one
 {
-  background: rgba(0, 0, 0, 0.5);
+  background: #b44c2b;
   position: relative;
 }
 .one h1
