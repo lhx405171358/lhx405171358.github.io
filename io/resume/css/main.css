@@ -130,7 +130,6 @@ header{
 }
 #top-menu .active:nth-child(3) a
 {
-  color: #b44c2b;
   -webkit-transition: color .7s;
   -moz-transition: color .7s;
   -ms-transition: color .7s;
@@ -139,7 +138,7 @@ header{
 }
 #top-menu .active:nth-child(4) a
 {
-  color: #009688;
+  color: #197bc9;
   -webkit-transition: color .7s;
   -moz-transition: color .7s;
   -ms-transition: color .7s;
@@ -188,7 +187,7 @@ header{
 
 .one
 {
-  background: #b44c2b;
+  background: #00BFA5;
   position: relative;
 }
 .one h1
@@ -422,14 +421,14 @@ header{
 
 .four
 {
-  background-color: #009688;
+  background-color: #197bc9;
   color: #fff;
   padding: 80px 200px;
   text-align: center;
 }
 .four .hr
 {
-  background-color: #00665c;
+  background-color: #13568b;
 }
 
 .four .card-group
