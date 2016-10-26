@@ -128,14 +128,6 @@ header{
   -o-transition: color .7s;
   transition: color .7s;
 }
-#top-menu .active:nth-child(3) a
-{
-  -webkit-transition: color .7s;
-  -moz-transition: color .7s;
-  -ms-transition: color .7s;
-  -o-transition: color .7s;
-  transition: color .7s;
-}
 #top-menu .active:nth-child(4) a
 {
   color: #197bc9;
