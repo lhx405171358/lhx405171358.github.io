@@ -1,5 +1,4 @@
 /* global */
-
 *
 {
   -webkit-box-sizing: border-box;
@@ -190,7 +189,7 @@ header{
 }
 .one h1
 {
-  padding: 12px;
+  padding: 12px 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }

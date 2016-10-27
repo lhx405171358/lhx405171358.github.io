@@ -4,7 +4,7 @@ $(function () {
     anchors: ["page1","page2","page3","page4","page5"],
     verticalCentered: false,
     resize: true,
-    paddingTop: "100px",
+    paddingTop: "60px",
     css3: true,
     scrollingSpeed: 700,
     afterRender: function () {
