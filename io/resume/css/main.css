@@ -55,13 +55,13 @@ button:hover, button:focus
 }
 .hr
 {
-  width: 80%;
+  width: 60%;
   height: 2px;
   margin: 20px auto;
 }
 .wrapper
 {
-  max-width: 60%;
+  max-width: 80%;
   margin: 3% auto;
 }
 header{
@@ -253,16 +253,17 @@ header{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 20px;
 }
 .two .intro-box ul
 {
   list-style: none;
-  width: 40%;
+  width: 50%;
   padding: 0;
   text-align: right;
   display: table;
+  margin: 0 10px 0 0;
 }
 .two .intro-box ul li
 {
@@ -274,14 +275,14 @@ header{
 .two .intro-box ul li span:nth-of-type(2n + 1)
 {
   text-align: right;
-  width: 40%;
+  width: 60%;
   min-width: 50px;
   display: table-cell;
 }
 .two .intro-box ul li span:nth-of-type(2n)
 {
   text-align: left;
-  width: 60%;
+  width: 40%;
   display: table-cell;
 }
 .two .intro-box .intro-info
@@ -302,12 +303,13 @@ header{
 }
 .three h3
 {
-  margin: 30px 0;
+  margin: 5% 0;
 }
 .three p
 {
   margin: 0 0 25px 0;
 }
+
 #slide-box
 {
   width: 80%;
@@ -320,7 +322,16 @@ header{
   transform: scale(1.01);
   transition: box-shadow .5s, transform .5s, font-size .5s;
 }
-
+@media screen and (max-width: 650px){
+  #slide-box
+  {
+    height: 350px;
+  }
+}
+#slide-box p
+{
+  margin: 0 0 5% 0;
+}
 #slide-lists
 {
   list-style: none;
@@ -341,8 +352,7 @@ header{
 #slide-box li p:last-of-type
 {
   text-align: left;
-  padding: 0 10%;
-  line-height: 40px;
+  line-height: 200%;
 }
 #slide-buttons
 {
@@ -428,6 +438,7 @@ header{
   width: 80%;
   margin: 0 auto;
 }
+
 .four .card-group .card
 {
   float: left;
@@ -444,7 +455,7 @@ header{
   left: 0;
   right: 0;
   margin: auto;
-  width: 150px;
+  width: 100px;
   height: 50px;
   line-height: 50px;
   font-size: 200%;
@@ -454,7 +465,7 @@ header{
 {
   list-style: none;
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   left: 0;
   right: 0;
   padding: 0 20px;
@@ -529,7 +540,7 @@ header{
 .download
 {
   position: fixed;
-  top: 50%;
+  top: 10%;
   right: -120px;
   width: 150px;
   border-radius: 10px 0 0 10px;

@@ -1,8 +1,9 @@
-;$(function () {
+$(function () {
   $('#content').fullpage({
     menu: '#top-menu',
     anchors: ["page1","page2","page3","page4","page5"],
     verticalCentered: false,
+    resize: true,
     paddingTop: "100px",
     css3: true,
     scrollingSpeed: 700,
@@ -39,19 +40,19 @@
           break;
         case 2:
           move('.two .wrapper h2').scale(1.2).end();
-          $('.two .hr').animate({width:"80%"});
+          $('.two .hr').animate({width:"60%"});
           break;
         case 3:
           move('.three .wrapper h2').scale(1.2).end();
-          $('.three .hr').animate({width:"80%"});
+          $('.three .hr').animate({width:"60%"});
           break;
         case 4:
           move('.four .wrapper h2').scale(1.2).end();
-          $('.four .hr').animate({width:"80%"});
+          $('.four .hr').animate({width:"60%"});
           break;
         case 5:
           move('.five .wrapper h2').scale(1.2).end();
-          $('.five .hr').animate({width:"80%"});
+          $('.five .hr').animate({width:"60%"});
           break;
         default:
           break;
@@ -92,6 +93,7 @@
       }
     },
   });
+
 });
 
 
@@ -184,7 +186,6 @@ $('.four .card h3').each(function () {
         move(title[0]).set('bottom', '0').end();
       });
     } else {
-      console.log('title toggle');
       move(title[0]).scale(0.8).end();
       move(title[0]).set('bottom', '50%').end(function () {
         para.fadeIn();
@@ -231,7 +232,7 @@ function resizeBox() {
   var boxwidth = parseInt(slideBox.box.css('width'));
   var offset = -(boxwidth * slideBox.index);
   slideBox.list.css({'left': offset});
-  console.log('resized!')
 }
+
 
 $(window).resize(throttle(resizeBox, 500, 200));
