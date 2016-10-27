@@ -10,6 +10,12 @@ body
 {
   font:16px/1.5 "Microsoft YaHei UI" , verdana, Monospace;
 }
+@media screen and (max-width: 650px){
+  body
+  {
+    font:8px/1.5 "Microsoft YaHei UI" , verdana, Monospace;
+  }
+}
 .clearfix:after
 {
   content: '';
