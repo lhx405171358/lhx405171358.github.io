@@ -25,7 +25,7 @@ body
 h2
 {
   font-size: 1.8em;
-  margin-top: 8%;
+  margin-top: 4%;
 }
 h3
 {
@@ -209,7 +209,7 @@ header{
   text-align: center;
   margin: 0 auto;
   position: relative;
-  top: 160px;
+  top: 150px;
   display: none;
 }
 @media screen and (min-width: 480px)and (max-width: 900px) {
@@ -339,7 +339,7 @@ header{
 #slide-box
 {
   width: 80%;
-  height: 450px;
+  height: 400px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -351,7 +351,7 @@ header{
 @media screen and (max-width: 650px){
   #slide-box
   {
-    height: 350px;
+    height: 300px;
     width: 95%;
   }
 }

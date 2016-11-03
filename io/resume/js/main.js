@@ -35,7 +35,7 @@ $(function () {
       switch (index){
         case 1:
           $('.one .inner').fadeIn(100, function () {
-            move('.one .inner').set('top', '160px').end();
+            move('.one .inner').set('top', '150px').end();
           });
           break;
         case 2:
