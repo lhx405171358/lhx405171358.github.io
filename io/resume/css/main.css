@@ -9,7 +9,7 @@ body
 {
   font:100%/1.5 "Microsoft YaHei UI" , verdana, Monospace;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 800px){
   body
   {
     font:62.5%/1.5 "Microsoft YaHei UI" , verdana, Monospace;
@@ -25,7 +25,13 @@ body
 h2
 {
   font-size: 1.8em;
-  margin-top: 4%;
+  margin-top: 50px;
+}
+@media screen and (max-width: 800px){
+  h2
+  {
+    margin-top: 30px;
+  }
 }
 h3
 {
@@ -70,7 +76,7 @@ button:hover, button:focus
   max-width: 80%;
   margin: 3% auto;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 800px){
   .wrapper
   {
     max-width: 95%;
@@ -102,6 +108,13 @@ header{
   padding: 0;
   position: relative;
   z-index: 2;
+}
+
+@media screen and (max-width: 480px){
+  #top-menu
+  {
+    width: 80%;
+  }
 }
 
 #top-menu li
@@ -180,8 +193,8 @@ header{
 #logo img{
   width: 100%;
 }
-/*宽度低于650px时，使用文字替代照片*/
-@media screen and (max-width:650px){
+/*宽度低于800px时，使用文字替代照片*/
+@media screen and (max-width:800px){
   #logo a
   {
     font-size: 1.5em;
@@ -212,27 +225,28 @@ header{
   top: 150px;
   display: none;
 }
-@media screen and (min-width: 480px)and (max-width: 900px) {
+@media screen and (min-width: 480px)and (max-width: 800px) {
   .one .inner
   {
-    max-width: 50%;
+    max-width: 40%;
   }
 }
 @media screen and (max-width: 480px){
   .one .inner
   {
-    max-width: 65%;
+    max-width: 50%;
   }
 }
 .one .inner h1
 {
   margin: 0;
   letter-spacing: 0.3rem;
+  white-space: nowrap;
 }
 .one .inner p
 {
-  line-height: 2rem;
-  margin: 1.5rem 0;
+  line-height: 2em;
+  margin: 1.5em 0;
   color: #fff;
   display: none;
 }
@@ -348,10 +362,10 @@ header{
   transform: scale(1.01);
   transition: box-shadow .5s, transform .5s, font-size .5s;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 480px){
   #slide-box
   {
-    height: 300px;
+    height: 290px;
     width: 95%;
   }
 }
@@ -465,10 +479,10 @@ header{
   width: 80%;
   margin: 0 auto;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 480px){
   .four .card-group
   {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -478,6 +492,12 @@ header{
   width: 50%;
   height: 200px;
   position: relative;
+}
+@media screen and (max-width: 480px){
+  .four .card-group .card
+  {
+    height: 180px;
+  }
 }
 .card h3
 {
@@ -591,16 +611,10 @@ header{
 }
 .download *
 {
-  line-height: 2.3rem;
-  font-size: 1.5rem;
+  line-height: 2em;
+  font-size: 1.5em;
 }
-@media screen and (max-width: 650px){
-  .download *
-  {
-    line-height: 1.5rem;
-    font-size: 1rem;
-  }
-}
+
 .download span
 {
   width: 35px;

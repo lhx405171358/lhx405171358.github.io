@@ -169,7 +169,7 @@ $('.four .card h3').each(function () {
   $(this).on('click', function () {
     var title = $(this);
     var para = $(this).next();
-
+    var card = $(this).parent();
     //设置disable标记，使得title每1000ms只响应一次点击事件
     if (title.attr('disabled')) {
       return;
@@ -180,7 +180,7 @@ $('.four .card h3').each(function () {
       title.removeAttr('disabled');
     }, 1000);
 
-    if (title.css('bottom') == '100px') {
+    if (parseInt(title.css('bottom')) == parseInt(card.css('height')) / 2) {
       para.fadeOut(function () {
         move(title[0]).scale(1).end();
         move(title[0]).set('bottom', '0').end();
