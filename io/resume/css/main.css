@@ -1,8 +1,6 @@
 /* global */
 *
 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 body
@@ -50,9 +48,7 @@ button {
   text-align: center;
   cursor: pointer;
   border: none;
-  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: .2s;
   transition-duration: .2s;
 }
 button:visited
@@ -138,37 +134,21 @@ header{
 #top-menu .active:nth-child(1) a
 {
   color: #26afb3;
-  -webkit-transition: color .7s;
-  -moz-transition: color .7s;
-  -ms-transition: color .7s;
-  -o-transition: color .7s;
   transition: color .7s;
 }
 #top-menu .active:nth-child(2) a
 {
   color: #607D8B;
-  -webkit-transition: color .7s;
-  -moz-transition: color .7s;
-  -ms-transition: color .7s;
-  -o-transition: color .7s;
   transition: color .7s;
 }
 #top-menu .active:nth-child(4) a
 {
   color: #197bc9;
-  -webkit-transition: color .7s;
-  -moz-transition: color .7s;
-  -ms-transition: color .7s;
-  -o-transition: color .7s;
   transition: color .7s;
 }
 #top-menu .active:nth-child(5) a
 {
   color: #157;
-  -webkit-transition: color .7s;
-  -moz-transition: color .7s;
-  -ms-transition: color .7s;
-  -o-transition: color .7s;
   transition: color .7s;
 }
 #top-menu a:hover
@@ -177,10 +157,6 @@ header{
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
-  -webkit-transition: transform .2s;
-  -moz-transition: transform .2s;
-  -ms-transition: transform .2s;
-  -o-transition: transform .2s;
   transition: transform .2s;
 }
 #logo a
@@ -290,10 +266,14 @@ header{
 }
 .two .intro-box
 {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-top: 20px;
 }
 .two .intro-box ul
@@ -545,10 +525,14 @@ header{
 }
 .five ul
 {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -592,10 +576,14 @@ header{
 
 .download
 {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   position: fixed;
   right: 0;
   top: 10%;
